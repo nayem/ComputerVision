@@ -1,0 +1,7 @@
+all: playground_001
+
+playground_001: playground_001.cpp
+	g++ playground_001.cpp -o playground_001 -lpng -I /usr/local/Cellar/libpng/1.6.28/include/.
+
+clean:
+	rm playground_001

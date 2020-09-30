@@ -1,0 +1,306 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% baposter Landscape Poster
+% LaTeX Template
+% Version 1.0 (11/06/13)
+%
+% baposter Class Created by:
+% Brian Amberg (baposter@brian-amberg.de)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[landscape,a0paper,fontscale=0.285]{baposter} % Adjust the font scale/size here
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Directory in which figures are stored
+
+\usepackage{amsmath} % For typesetting math
+\usepackage{amssymb} % Adds new symbols to be used in math mode
+
+\usepackage{booktabs} % Top and bottom rules for tables
+\usepackage{enumitem} % Used to reduce itemize/enumerate spacing
+\usepackage{palatino} % Use the Palatino font
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+
+\usepackage{multicol} % Required for multiple columns
+\setlength{\columnsep}{1.5em} % Slightly increase the space between columns
+\setlength{\columnseprule}{0mm} % No horizontal rule between columns
+
+\usepackage{tikz} % Required for flow chart
+\usetikzlibrary{shapes,arrows} % Tikz libraries required for the flow chart in the template
+
+\newcommand{\compresslist}{ % Define a command to reduce spacing within itemize/enumerate environments, this is used right after \begin{itemize} or \begin{enumerate}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+}
+
+\definecolor{lightblue}{rgb}{0.145,0.6666,1} % Defines the color used for content box headers
+
+\begin{document}
+
+\begin{poster}
+{
+headerborder=closed, % Adds a border around the header of content boxes
+colspacing=1em, % Column spacing
+bgColorOne=white, % Background color for the gradient on the left side of the poster
+bgColorTwo=white, % Background color for the gradient on the right side of the poster
+borderColor=lightblue, % Border color
+headerColorOne=black, % Background color for the header in the content boxes (left side)
+headerColorTwo=lightblue, % Background color for the header in the content boxes (right side)
+headerFontColor=white, % Text color for the header text in the content boxes
+boxColorOne=white, % Background color of the content boxes
+textborder=roundedleft, % Format of the border around content boxes, can be: none, bars, coils, triangles, rectangle, rounded, roundedsmall, roundedright or faded
+eyecatcher=true, % Set to false for ignoring the left logo in the title and move the title left
+headerheight=0.1\textheight, % Height of the header
+headershape=roundedright, % Specify the rounded corner in the content box headers, can be: rectangle, small-rounded, roundedright, roundedleft or rounded
+headerfont=\Large\bf\textsc, % Large, bold and sans serif font in the headers of content boxes
+%textfont={\setlength{\parindent}{1.5em}}, % Uncomment for paragraph indentation
+linewidth=2pt % Width of the border lines around content boxes
+}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+%
+{\includegraphics[height=15em]{iu_trident_cmyk_crimson}} % First university/lab logo on the left
+{\hspace*{-1em} \bf\textsc{RSGAN: Recurrent Stacked Generative Adversarial
+Network for Conditional Video Generation}\vspace{0.5em}} % Poster title
+{\textsc{S. Naha, K. M. Nayem and M. L. Islam \hspace{12pt} School of Informatics and Computing, Indiana University}} % Author names and institution
+%{\includegraphics[height=4em]{logo.png}} % Second university/lab logo on the right
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\headerbox{Introduction}{name=introduction,column=0,span=2,row=0}{
+
+Generating video frames based on a pre-condition is a challenging problem and requires understanding of per frame contents and visual dynamics and their relevacies to the pre-condition. In this project, we propose a novel Recurrent Stacked Generative Adversarial Network (RSGAN) based model to generate video frames based on a given pre-condition. In our knowledge, this is the first work to address the problem of conditional video generation using adversarial network. We  can address the problem of generating videos based on pre-conditions such as,
+\begin{enumerate}\compresslist
+\item action classes
+\item fMRI signals
+\item sentence descriptions
+\end{enumerate}
+
+\begin{center}
+{\includegraphics[scale=0.45]{problem1}}
+\end{center}
+
+\vspace{0.3em} % When there are two boxes, some whitespace may need to be added if the one on the right has more content
+}
+
+%----------------------------------------------------------------------------------------
+%	Objective Function
+%----------------------------------------------------------------------------------------
+
+\headerbox{Objective Function}{name=objective_function,column=2,span=2,row=0}{
+
+{Conditioned on Gaussian latent variables $c_0$, {Stage-I RSGAN} trains discriminator $D_0$ and generator $G_0$ by alternatively maximizing $\mathcal{L_\mathnormal{D_0}}$ and minimizing $\mathcal{L_\mathnormal{G_0}}$.
+}
+\\
+{\textbf{Stage-I RSGAN: }\\
+$\mathcal{L_\mathnormal{D_0}} = \mathbb{E_\mathnormal{(I_0,t) \sim p_{data} }} [log D_0(I_0,\varphi_t)] + \mathbb{E_\mathnormal{z \sim p_z, t \sim p_{data} }} [log (1-D_0(G_0(z,c_0), \varphi_t))]$
+\\
+$\mathcal{L_\mathnormal{G_0}} =  \mathbb{E_\mathnormal{z \sim p_z, t \sim p_{data} }} [log (1-D_0(G_0(z,c_0), \varphi_t))] + \lambda D_{KL} (\mathcal{N}(\mu_0(\varphi_t), \sum_0 (\varphi_t)) || \mathcal{N}(0,I))$
+}
+\\\\
+{Conditioned on the low resulation sample $s_0$ and Gaussian latent variables $c$, discriminator $D$ and generator $G$ in {Stage-II RSGAN} is trained  by alternatively maximizing $\mathcal{L_\mathnormal{D}}$ and minimizing $\mathcal{L_\mathnormal{G}}$.
+}
+\\
+{\textbf{Stage-II RSGAN: }\\
+$\mathcal{L_\mathnormal{D}} = \mathbb{E_\mathnormal{(I,t) \sim p_{data} }} [log D(I,\varphi_t)] + \mathbb{E_\mathnormal{s_0 \sim pG_0, t \sim p_{data} }} [log (1-D(G(s_0,c), \varphi_t))]$
+\\
+$\mathcal{L_\mathnormal{G}} =  \mathbb{E_\mathnormal{s_0 \sim pG_0, t \sim p_{data} }} [log (1-D(G(s_0,c), \varphi_t))] + \lambda D_{KL} (\mathcal{N}(\mu(\varphi_t), \sum (\varphi_t)) || \mathcal{N}(0,I))$
+}
+%\begin{multicols}{2}
+%\vspace{1em}
+%\begin{center}
+%\includegraphics[width=0.8\linewidth]{placeholder}
+%\captionof{figure}{Figure caption}
+%\end{center}
+%
+%Aliquam auctor, metus id ultrices porta, risus enim cursus sapien, quis iaculis sapien tortor sed odio. Mauris ante orci, euismod vitae tincidunt eu, porta ut neque. Aenean sapien est, viverra vel lacinia nec, venenatis eu nulla. Maecenas ut nunc nibh, et tempus libero. Aenean vitae risus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
+%\end{multicols}
+
+%------------------------------------------------
+
+%\begin{multicols}{2}
+%\vspace{1em}
+%Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut elit sit amet metus lobortis consequat sit amet in libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sem magna. Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing. Quisque vestibulum eros eu.
+%
+%\begin{center}
+%\includegraphics[width=0.8\linewidth]{placeholder}
+%\captionof{figure}{Figure caption}
+%\end{center}
+%
+%\end{multicols}
+}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\headerbox{References}{name=references,column=2,span=2,above=bottom}{
+
+\renewcommand{\section}[2]{\vskip 0.05em} % Get rid of the default "References" section title
+\nocite{*} % Insert publications even if they are not cited in the poster
+\small{ % Reduce the font size in this block
+\bibliographystyle{unsrt}
+%\bibliography{sample} % Use sample.bib as the bibliography file
+%\bibliographystyle{abbrv}
+\bibliography{conference_poster_4}
+}}
+
+
+%----------------------------------------------------------------------------------------
+%	RESULT
+%----------------------------------------------------------------------------------------
+
+\headerbox{Result}{name=result,column=2,span=2,row=0,below=objective_function}{
+Ground truth ($1^{st}$ row) and the \textbf{partial result on Convolutional LSTM} ($2^{nd}$ row).
+\vspace*{-1em}
+\begin{center}
+\begin{multicols}{2}
+	{\includegraphics[scale=0.55]{"drink water"}
+	\\Video action: Drink water\\}
+	{\includegraphics[scale=0.55]{drop}
+	\\Video action: Drop\\}
+	{\includegraphics[scale=0.55]{"point finger at the other person"}
+	\\Video action: Point finger at the other person\\}
+	{\includegraphics[scale=0.55]{reading}
+	\\Video action: Reading\\}
+	{\includegraphics[scale=0.55]{"slapping other person"}
+	\\Video action: Slapping other person\\}
+	%{\includegraphics[scale=0.5]{tablet}}
+	{\includegraphics[scale=0.55]{writing}
+	\\Video action: Writing}
+\end{multicols}
+\end{center}
+%{\includegraphics[scale=0.55]{point finger at the other person}}
+%{\includegraphics[scale=0.55]{reading}}
+%{\includegraphics[scale=0.55]{slapping other person}}
+%{\includegraphics[scale=0.55]{tablet}}
+%{\includegraphics[scale=0.55]{writing}}
+
+\vspace*{-2.1em}
+\begin{itemize}\compresslist
+\item Right now, we are trying to generate video with simple details. That's why we are using NTU RGB+D Action Recognition Dataset (skeletal data).
+%\item Due to two stage adversial network systems, it takes around 3days to train each stages in Future System of IU.
+\end{itemize}
+
+%\textsc{\begin{multicols}{2}
+%
+%\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=4.5em, text badly centered, node distance=2cm, inner sep=0pt]
+%\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=4em]
+%\tikzstyle{line} = [draw, -latex']
+%\tikzstyle{cloud} = [draw, ellipse, fill=red!20, node distance=3cm, minimum height=2em]
+%
+%\begin{tikzpicture}[node distance = 2cm, auto]
+%\node [block] (init) {Initialize Model};
+%\node [cloud, left of=init] (Start) {Start};
+%\node [cloud, right of=init] (Start2) {Start Two};
+%\node [block, below of=init] (init2) {Initialize Two};
+%\node [decision, below of=init2] (End) {End};
+%\path [line] (init) -- (init2);
+%\path [line] (init2) -- (End);
+%\path [line, dashed] (Start) -- (init);
+%\path [line, dashed] (Start2) -- (init);
+%\path [line, dashed] (Start2) |- (init2);
+%\end{tikzpicture}
+%
+%%------------------------------------------------
+%
+%\begin{itemize}\compresslist
+%\item Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.
+%\item Vestibulum sem ante, hendrerit a gravida ac, blandit quis magna.
+%\item Donec sem metus, facilisis at condimentum eget, vehicula ut massa. Morbi consequat, diam sed convallis tincidunt, arcu nunc.
+%\item Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
+%\end{itemize}
+%
+%\end{multicols}}
+}
+
+%----------------------------------------------------------------------------------------
+%	FUTURE RESEARCH
+%----------------------------------------------------------------------------------------
+
+\headerbox{Future Research}{name=futureresearch,column=2,span=2,below=result, above=references}{ % This block is as tall as the references block
+
+\begin{itemize}\compresslist
+\item Generate video with complex details and multiple moving objects. 
+\item Use fMRI dataset of human brain, to generate video.
+\end{itemize}
+
+}
+%----------------------------------------------------------------------------------------
+%	OUR APPROACH
+%----------------------------------------------------------------------------------------
+
+\headerbox{Our Approach}{name=our_approach,column=0,span=2,below=introduction,above=bottom}{ % This block's bottom aligns with the bottom of the conclusion block
+\vspace*{-.4em}
+\begin{center}
+{\includegraphics[scale=0.7]{approach_2}}
+\end{center}
+\vspace*{-1em}
+{%Two stages of RSGAN where each video frame is generated by fully Convolutional LSTM and in LSTM layer, Stack GAN model is running on sentence descriptions, given as pre-condition.
+Each RSGAN module is - consist of a StackGAN model.\\
+\hspace*{10.8em}- connected by a Fully Convolutional LSTM Network.
+
+
+
+
+
+}
+}
+
+
+%%----------------------------------------------------------------------------------------
+%%	RESULTS 2
+%%----------------------------------------------------------------------------------------
+%
+%\headerbox{Results 2}{name=results2,column=1,below=introduction,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
+%
+%Donec faucibus purus at tortor egestas eu fermentum dolor facilisis. Maecenas tempor dui eu neque fringilla rutrum. Mauris \emph{lobortis} nisl accumsan.
+%
+%\begin{center}
+%\begin{tabular}{l l l}
+%\toprule
+%\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+%\midrule
+%Treatment 1 & 0.0003262 & 0.562 \\
+%Treatment 2 & 0.0015681 & 0.910 \\
+%Treatment 3 & 0.0009271 & 0.296 \\
+%\bottomrule
+%\end{tabular}
+%\captionof{table}{Table caption}
+%\end{center}
+%
+%Nulla ut porttitor enim. Suspendisse venenatis dui eget eros gravida tempor. Mauris feugiat elit et augue placerat ultrices. Morbi accumsan enim nec tortor consectetur non commodo.
+%
+%\begin{center}
+%\begin{tabular}{l l l}
+%\toprule
+%\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+%\midrule
+%Treatment 1 & 0.0003262 & 0.562 \\
+%Treatment 2 & 0.0015681 & 0.910 \\
+%Treatment 3 & 0.0009271 & 0.296 \\
+%\bottomrule
+%\end{tabular}
+%\captionof{table}{Table caption}
+%\end{center}
+%}
+
+%----------------------------------------------------------------------------------------
+
+\end{poster}
+
+\end{document}

@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}
+
+\bibitem{deepMSE}
+M.~Mathieu, C.~Couprie, and Y.~LeCun.
+\newblock {Deep multi-scale video prediction beyond mean square error}.
+\newblock {\em arXiv preprint arXiv:1511.05440}, 2015.
+
+\bibitem{recVEBA}
+S.~Nishimoto, A.~T. Vu, T.~Naselaris, Y.~Benjamini, B.~Yu, and J.~L. Gallant.
+\newblock {Reconstructing visual experiences from brain activity evoked by
+  natural movies}.
+\newblock In {\em Current Biology}, volume 21(19), pages 1641--1646, 2011.
+
+\bibitem{movieDes}
+A.~Rohrbach, A.~Torabi, M.~Rohrbach, N.~Tandon, C.~Pal, H.~Larochelle, and
+  B.~Schiele.
+\newblock {Movie Description}.
+\newblock {\em arXiv preprint arXiv:1605.03705}, 2016.
+
+\bibitem{uCF101}
+K.~Soomro, A.~R. Zamir, and M.~Shah.
+\newblock {UCF101: A Dataset of 101 Human Action Classes From Videos in The
+  Wild}.
+\newblock {\em CRCV-TR-12-01}, 2012.
+
+\bibitem{rFCN}
+S.~Valipour, M.~Siam, M.~Jagersand, and N.~Ray.
+\newblock {Recurrent Fully Convolutional Networks for Video Segmentation}.
+\newblock {\em arXiv preprint arXiv:1611.09904}, 2016.
+
+\bibitem{genVSD}
+C.~Vondrick, H.~Pirsiavash, and A.~Torralba.
+\newblock {Generating videos with scene dynamics}.
+\newblock In {\em In Advances In Neural Information Processing Systems}, pages
+  613--621, 2016.
+
+\bibitem{attribute2image}
+X.~Yan, J.~Yang, K.~Sohn, and H.~Lee.
+\newblock {Attribute2image: Conditional image generation from visual
+  attributes}.
+\newblock In {\em In European Conference on Computer Vision}, pages 776--791.
+  Springer International, October 2016.
+
+\bibitem{stackGAN}
+H.~Zhang, T.~Xu, H.~Li, S.~Zhang, X.~Huang, X.~Wang, and D.~Metaxas.
+\newblock {StackGAN: Text to Photo-realistic Image Synthesis with Stacked
+  Generative Adversarial Networks}.
+\newblock {\em arXiv preprint arXiv:1612.03242}, 2016.
+
+\end{thebibliography}

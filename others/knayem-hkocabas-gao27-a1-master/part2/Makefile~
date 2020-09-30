@@ -1,0 +1,7 @@
+all: playground_001
+
+detect: playground_001.cpp
+	g++ playground_001.cpp -o playground_001 -lpng -I.
+
+clean:
+	rm playground_001

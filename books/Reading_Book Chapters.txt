@@ -1,0 +1,62 @@
+2.1 Readings
+
+From Burger & Burge, Principles of Digital Image Processing: Fundamental techniques. 2009
+Burger 1.2.3-1.2.6, 5.1-5.2, 5.3, 5.5
+
++++++++++++++++++++++++++++++++++++++++++++++++
+
+3.1 Readings
+
+Computer Vision: Algorithms and Applications. Springer, 2011
+Szelisi 3.2, 3.4
+
+From Burger & Burge, Principles of Digital Image Processing: Core algorithms, 2009
+Burger ch 7, 8 (No need to understand or read all math, but it's there if you're interested)
+
++++++++++++++++++++++++++++++++++++++++++++++++
+
+4.1 Readings
+
+From Burger & Burge, Principles of Digital Image Processing: Fundamental techniques. 2009. (Available online here: http://www.iucat.iu.edu/catalog/12457124)
+Burger 6.1-6.4
+
+Burger & Burge, Principles of Digital Image Processing: Core algorithms, 2009 (Available online here: http://www.iucat.iu.edu/catalog/11881641)
+
+Burger ch 3
+
++++++++++++++++++++++++++++++++++++++++++++++++
+
+5.1 Features and SIFT
+
+From Burger & Burge, Principles of Digital Image Processing: Core algorithms, 2009 (Available online here: http://www.iucat.iu.edu/catalog/11881641) 
+
+Burger ch 4
+
++++++++++++++++++++++++++++++++++++++++++++++++
+
+6.1 Transforms
+
+Burger (2nd vol) 10-10.2
+Szeliski 2-2.1.3
+
+Kasturi Appendix A.2
+
++++++++++++++++++++++++++++++++++++++++++++++++
+
+7.1 Projection
+
+Szeliski 2.1.5 (3D to 2D projections)
+
++++++++++++++++++++++++++++++++++++++++++++++++
+
+8.1 Panoramas_RANSAC
+
+Szeliski 6.1.4
+
++++++++++++++++++++++++++++++++++++++++++++++++
+
+9.1 Bag of parts
+
+Szeliski 14.1, 14.3
+
++++++++++++++++++++++++++++++++++++++++++++++++

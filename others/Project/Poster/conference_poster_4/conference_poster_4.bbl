@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{stackGAN}
+H.~Zhang, T.~Xu, H.~Li, S.~Zhang, X.~Huang, X.~Wang, and D.~Metaxas.
+\newblock {StackGAN: Text to Photo-realistic Image Synthesis with Stacked
+  Generative Adversarial Networks}.
+\newblock {\em arXiv preprint arXiv:1612.03242}, 2016.
+
+\bibitem{rFCN}
+S.~Valipour, M.~Siam, M.~Jagersand, and N.~Ray.
+\newblock {Recurrent Fully Convolutional Networks for Video Segmentation}.
+\newblock {\em arXiv preprint arXiv:1611.09904}, 2016.
+
+\bibitem{c-RNN-GAN}
+O.~Mogren.
+\newblock {C-RNN-GAN: Continuous recurrent neural networks with adversarial
+  training}.
+\newblock {\em arXiv preprint arXiv:1611.09904}, 2016.
+
+\end{thebibliography}

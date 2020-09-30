@@ -1,0 +1,208 @@
+\begin{thebibliography}{10}
+
+\bibitem{gradient1994}
+Y.~Bengio, P.~Simard, and P.~Frasconi.
+\newblock Learning long-term dependencies with gradient descent is difficult.
+\newblock {\em {Neural Networks, IEEE Transactions }}, 5(2):157–166, 1994.
+
+\bibitem{encoder2014}
+K.~Cho, B.~van Merrienboer, D.~Bahdanau, and Y.~Bengio.
+\newblock {On the properties of neural machine translation: Encoder-decoder
+  approaches}.
+\newblock {\em {arXiv preprint arXiv:1409.1259}}, 2014.
+
+\bibitem{rnn2014}
+J.~Chung, C.~Gulcehre, K.~Cho, and Y.~Bengio.
+\newblock Empirical evaluation of gated recurrent neural networks on sequence
+  modeling.
+\newblock {\em {arXiv preprint arXiv:1412.3555}}, 2014.
+
+\bibitem{tutorial2016}
+C.~Doersch.
+\newblock Tutorial on variational autoencoders.
+\newblock {\em {arXiv:1606.05908}}, 2016.
+
+\bibitem{faceGan2015}
+J.~Gauthier.
+\newblock Conditional generative adversarial networks for convolutional face
+  generation.
+\newblock Technical report, Tech Report, 2015.
+
+\bibitem{gan2014}
+I.~J. Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~C. Courville, and Y.~Bengio.
+\newblock Nips.
+\newblock In {\em Generative adversarial nets}, 2014.
+
+\bibitem{deepRes2016}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun.
+\newblock Cvpr.
+\newblock In {\em {Deep residual learning for image recognition}}, 2016.
+
+\bibitem{lstm1997}
+S.~Hochreiter and J.~Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em {Neural computation}}, 9(8):1735–1780, 1997.
+
+\bibitem{densebox2015}
+L.~Huang, Y.~Yang, Y.~Deng, and Y.~Yu.
+\newblock {Densebox: Unifying landmark localization with end to end object
+  detection}.
+\newblock {\em arXiv preprint arXiv:1509.04874}, 2015.
+
+\bibitem{batchNorm2014}
+S.~Ioffe and C.~Szegedy.
+\newblock Icml.
+\newblock In {\em {Batch normalization: Accelerating deep network training by
+  reducing internal covariate shift}}, 2015.
+
+\bibitem{percep2016}
+J.~Johnson, A.~Alahi, and L.~Fei-Fei.
+\newblock Eccv.
+\newblock In {\em {Perceptual losses for real-time style transfer and
+  super-resolution}}, 2016.
+
+\bibitem{bayes2014}
+D.~P. Kingma and M.~Welling.
+\newblock Iclr.
+\newblock In {\em {Auto-encoding variational bayes}}, 2014.
+
+\bibitem{autoEncod2016}
+A.~B.~L. Larsen, S.~K. Sønderby, H.~Larochelle, and O.~Winther.
+\newblock Icml.
+\newblock In {\em {Autoencoding beyond pixels using a learned similarity
+  metric}}, 2016.
+
+\bibitem{deepSeg2015}
+G.~Lin, C.~Shen, I.~Reid, and et~al.
+\newblock {Efficient piecewise training of deep structured models for semantic
+  segmentation}.
+\newblock {\em arXiv preprint arXiv:1504.01013}, 2015.
+
+\bibitem{rectifier2013}
+A.~L. Maas, A.~Y. Hannun, and A.~Y. Ng.
+\newblock Icml.
+\newblock In {\em {Rectifier nonlinearities improve neural network acoustic
+  models}}, 2013.
+
+\bibitem{deepMSE}
+M.~Mathieu, C.~Couprie, and Y.~LeCun.
+\newblock {Deep multi-scale video prediction beyond mean square error}.
+\newblock {\em arXiv preprint arXiv:1511.05440}, 2015.
+
+\bibitem{condGan2014}
+M.~Mirza and S.~Osindero.
+\newblock Conditional generative adversarial nets.
+\newblock {\em {arXiv:1411.1784}}, 2014.
+
+\bibitem{recVEBA}
+S.~Nishimoto, A.~T. Vu, T.~Naselaris, Y.~Benjamini, B.~Yu, and J.~L. Gallant.
+\newblock {Reconstructing visual experiences from brain activity evoked by
+  natural movies}.
+\newblock In {\em Current Biology}, volume 21(19), pages 1641--1646, 2011.
+
+\bibitem{deconv2015}
+H.~Noh, S.~Hong, and B.~Han.
+\newblock {Learning deconvolution network for semantic segmentation}.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, page 1520–1528, 2015.
+
+\bibitem{learn2016}
+S.~Reed, Z.~Akata, S.~Mohan, S.~Tenka, B.~Schiele, and H.~Lee.
+\newblock Nips.
+\newblock In {\em {Learning what and where to draw}}, 2016.
+
+\bibitem{fineGrain2016}
+S.~Reed, Z.~Akata, B.~Schiele, and H.~Lee.
+\newblock Cvpr.
+\newblock In {\em {Learning deep representations of fine-grained visual
+  descriptions}}, 2016.
+
+\bibitem{autoEncod2014}
+Z.~A. S.~Reed, X.~Yan, L.~Logeswaran, B.~Schiele, and H.~Lee.
+\newblock Icml.
+\newblock In {\em {Generative adversarial text-to-image synthesis}}, 2014.
+
+\bibitem{improvGan2016}
+T.~Salimans, I.~J. Goodfellow, W.~Zaremba, V.~Cheung, A.~Radford, and X.~Chen.
+\newblock Improved techniques for training gans.
+\newblock {\em {NIPS}}, 2016.
+
+\bibitem{NTU}
+A.~Shahroudy, J.~Liu, T.-T. Ng, and G.~Wang.
+\newblock {NTU RGB+D: A Large Scale Dataset for 3D Human Activity Analysis}.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, 2016.
+
+\bibitem{deepConv2014}
+K.~Simonyan and A.~Zisserman.
+\newblock {Very deep convolutional networks for large-scale image recognition}.
+\newblock {\em arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem{imgRecog2014}
+K.~Simonyan and A.~Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock {\em {arXiv preprint arXiv:1409.1556}}, 2014.
+
+\bibitem{uCF101}
+K.~Soomro, A.~R. Zamir, and M.~Shah.
+\newblock {UCF101: A Dataset of 101 Human Action Classes From Videos in The
+  Wild}.
+\newblock {\em CRCV-TR-12-01}, 2012.
+
+\bibitem{rnn2011}
+I.~Sutskever, J.~Martens, and G.~E. Hinton.
+\newblock {Proceedings of the 28th International Conference on Machine Learning
+  (ICML-11)}.
+\newblock In {\em Generating text with recurrent neural networks}, page
+  1017–1024, 2011.
+
+\bibitem{rFCN}
+S.~Valipour, M.~Siam, M.~Jagersand, and N.~Ray.
+\newblock {Recurrent Fully Convolutional Networks for Video Segmentation}.
+\newblock {\em arXiv preprint arXiv:1611.09904}, 2016.
+
+\bibitem{rnn2012}
+O.~Vinyals, S.~V. Ravuri, and D.~Povey.
+\newblock {Acoustics, Speech and Signal Processing (ICASSP), 2012 IEEE
+  International Conference}.
+\newblock In {\em Revisiting recurrent neural networks forrobust asr}, page
+  4085–4088, 2012.
+
+\bibitem{genVSD}
+C.~Vondrick, H.~Pirsiavash, and A.~Torralba.
+\newblock {Generating videos with scene dynamics}.
+\newblock In {\em In Advances In Neural Information Processing Systems}, pages
+  613--621, 2016.
+
+\bibitem{track2015}
+L.~Wang, W.~Ouyang, X.~Wang, and H.~Lu.
+\newblock {Visual tracking with fully convolutional networks}.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, page 3119–3127, 2015.
+
+\bibitem{rectifierConv2015}
+B.~Xu, N.~Wang, T.~Chen, and M.~Li.
+\newblock Icml workshop.
+\newblock In {\em {Empirical evaluation of rectified activations in
+  convolutional network}}, 2015.
+
+\bibitem{attribute2image}
+X.~Yan, J.~Yang, K.~Sohn, and H.~Lee.
+\newblock {Attribute2image: Conditional image generation from visual
+  attributes}.
+\newblock In {\em In European Conference on Computer Vision}, pages 776--791.
+  Springer International, October 2016.
+
+\bibitem{adaDelta2012}
+M.~D. Zeiler.
+\newblock Adadelta: an adaptive learning rate method.
+\newblock {\em {arXiv preprint arXiv:1212.5701}}, 2012.
+
+\bibitem{stackGAN}
+H.~Zhang, T.~Xu, H.~Li, S.~Zhang, X.~Huang, X.~Wang, and D.~Metaxas.
+\newblock {StackGAN: Text to Photo-realistic Image Synthesis with Stacked
+  Generative Adversarial Networks}.
+\newblock {\em arXiv preprint arXiv:1612.03242}, 2016.
+
+\end{thebibliography}

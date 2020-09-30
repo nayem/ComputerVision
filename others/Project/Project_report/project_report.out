@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Fully Convolutional Networks \(FCN\)}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Recurrent Neural Networks \(RNN\)}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Long Short Term Memory \(LSTM\)}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Gated Recurrent Unit \(GRU\)}{subsection.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Generative Adversarial Networks \(GAN\)}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Our Approach}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Stacked Adversarial Network}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Stage-I GAN}{subsection.3.1}% 10
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Stage-II GAN}{subsection.3.1}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Recurrent Fully Convolutional Network}{section.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Convolutional Gated Recurrent Unit \(Conv-GRU\)}{subsection.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Recurrent Stacked Generative Adversarial Network \(RSGAN\)}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{Experiments}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Datasets}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.1.1}{NTU RGB+D Action Recognition Dataset}{subsection.4.1}% 17
+\BOOKMARK [3][-]{subsubsection.4.1.2}{UCF-101 Dataset}{subsection.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Evaluation Metrics}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.3}{Training Methods and Implementation}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.4}{Qualitative Results}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{Conclusion and Future Works}{}% 22
